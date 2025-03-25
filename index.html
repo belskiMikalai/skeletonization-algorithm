@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        #canvas {
+            border: 1px solid;
+        }
+        #formId {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Скелетизация</h1>
+    </header>
+    <main>
+        <div class="image-result">
+            <h2>Результат:</h2>
+            <canvas id="canvas" width="300px" height="300px">image</canvas>
+            <form id="formId">
+                <input id="input" type="file" accept="image/*, .csv" required>
+                <label for="input" id="errorMsg"></label>
+                <button id="choose-img">Выбрать</button>
+                <label for="file">Файл:</label>
+                <select name="file" id="file">
+                  <option value="png" selected>PNG</option>
+                  <option value="csv">CSV</option>
+                </select>
+                <button id="save-img">Сохранить</button>
+            </form>
+    </main>
+
+</body>
+</html>
